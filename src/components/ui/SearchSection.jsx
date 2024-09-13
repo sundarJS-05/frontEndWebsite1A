@@ -2,15 +2,25 @@ import React from 'react'
 // import {Input} from 'postcss'
 import { Search } from 'lucide-react'
 import {Input} from './Input'
+import { Button } from './button'
+import { ChevronDown } from 'lucide-react';
 
 export default function SearchSection() {
   return (
-    <div className='px-7'>
-     <div className='relative '>
-      <Search className='absolute left-2 top-3 h-4 w-4 text-muted-foreground'/>
+    <div>
+     <div className='relative w-full '>
+      <Search className='absolute left-2 top-3 h-4 w-full text-muted-foreground '/>
 
-      <Input placeholder='Enter your search...'  className='w-1/4 m-7'/>
+      <Input placeholder='Enter your search..'  className='w-1/3 pl-8'/>
       </div>
+
+      <Button className='flex items-center gap-1 m-5 p-5 bg-violet-300  dark:bg-gray-800'>
+        <span>
+        Add new
+        </span>
+        <ChevronDown />
+
+      </Button>
     </div>
   )
 }
