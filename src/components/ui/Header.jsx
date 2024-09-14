@@ -7,37 +7,30 @@ import { Button } from './button';
 
 let pages = [
   {
-    title: 'Overview',
+    title: 'Pehli page',
     active: true
   },
   {
-    title: 'Integrations',
+    title: 'Doosra Panna',
     active: false
   },
   {
-    title: 'Activity',
+    title: 'Jaankaari',
     active: false
   },
   {
-    title: 'Domains',
+    title: 'Ajeeb Kissey',
     active: false
   },
   {
-    title: 'Usage',
+    title: 'Chal Kya Raha Hai?',
     active: false
   },
   {
-    title: 'Monitoring',
+    title: 'Ok Bye!',
     active: false
   },
-  {
-    title: 'Storage',
-    active: false
-  },
-  {
-    title: 'Settings',
-    active: false
-  }
+
 
 ]
 
@@ -46,7 +39,7 @@ export default function Header() {
   return (
     <div>
       {/* first section */}
-      <section className='flex justify-between border'>
+      <section className='flex justify-between border overflow-auto'>
       <div className='flex items-center '>
 
         {/* left half */}
